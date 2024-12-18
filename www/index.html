@@ -77,7 +77,7 @@ function validateContent(content) {
         showMessage('投稿内容は1000文字以内で入力してください', 'error');
         return false;
     }
-   if (content =="麻薬") {
+   if (content.indexOf("麻薬")>=0) {
         showMessage('NGワードが含まれています', 'error');
         return false;
    }
